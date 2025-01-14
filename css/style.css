@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+header, footer {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 20px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+header {
+    top: 0;
+    background: linear-gradient(135deg, lightblue, darkblue);
+}
+
+footer {
+    bottom: 0;
+    background: linear-gradient(135deg, lightblue, darkblue);
+    text-align: center;
+    padding: 30px;
+    font-size: 1.2rem;
+}
+
+header .header-content, footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img, footer img {
+    height: 50px;
+}
+
+header .project-name h1 {
+    font-size: 3rem;
+}
+
+header .copyright p {
+    font-size: 1.2rem;
+}
+
+.under-header {
+    background: linear-gradient(135deg, lightblue, darkblue);
+    padding: 10px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 40px;
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+/* Image container for horizontal scrolling */
+.game-images {
+    display: flex;
+    overflow-x: auto;  /* Allows horizontal scrolling */
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px; /* Rounded corners */
+    background: linear-gradient(135deg, rgba(173, 216, 230, 0.2), rgba(0, 0, 139, 0.7)); /* Light blue to dark blue gradient with transparency */
+    border: 2px solid rgba(0, 0, 139, 0.1); /* Optional border to enhance visibility */
+    box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.3); /* Optional shadow for a floating effect */
+}
+
+/* Custom scrollbar style */
+.game-images::-webkit-scrollbar {
+    height: 10px; /* Height of the scrollbar */
+}
+
+.game-images::-webkit-scrollbar-thumb {
+    background-color: #3498db; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the scrollbar */
+    border: 3px solid rgba(0, 0, 139, 0.5); /* Border around the thumb */
+}
+
+.game-images::-webkit-scrollbar-track {
+    background: rgba(173, 216, 230, 0.3); /* Track color */
+    border-radius: 10px;
+}
+
+/* Image styling inside the container */
+.game-images img {
+    width: 300px;  /* Reduced image size */
+    height: auto;
+    flex-shrink: 0; /* Prevents images from shrinking */
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.member {
+    background: #fff;
+    border-radius: 50%; /* Ensures the member images are circles */
+    padding: 20px;  /* Add padding to create space inside the circle */
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.member img {
+    width: 100%; /* Ensures the image fills the circle */
+    height: 100%; /* Ensures the image fills the circle */
+    object-fit: cover; /* Ensures the image covers the entire circle */
+    border-radius: 50%; /* Ensures the image is also circular */
+}
+
+.member h4 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.member p {
+    font-size: 1.2rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.download-link {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 20px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 1.4rem;
+}
+
+.download-link:hover {
+    background-color: #2980b9;
+}
+
+/* Header and footer sticky behavior */
+header, footer {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+footer {
+    bottom: 0;
+    padding: 30px;
+}
+
