@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Loaf Labs</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true
+  });
+</script>
+
 <body>
     <header>
         <div class="header-content">
-            <div class="logo">
-                <img src="assets/logo.png" alt="Loaf Labs Logo">
+            <div class="logo_jeu">
+                <img src="assets/logo_jeu.png" alt="Loaf Labs Logo">
             </div>
             <div class="project-name">
                 <h1>PAIN</h1>
@@ -26,32 +36,97 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="info.html">Info</a></li>
-                <li><a href="project.html">Project</a></li>
+                <li><a href="project.html">Download</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </div>
 
+    <div class="quote-carousel" data-aos="fade-left">
+        <div class="quote-track">
+            <div class="quote-slide">“This game is bread-taking!”</div>
+            <div class="quote-slide">“Rogue-like and rogue-bread.”</div>
+            <div class="quote-slide">“Did you know... that beer is bread?”</div>
+        </div>
+    </div>
+    
     <main>
-        <section id="home">
+        <section id="home" class="home-intro">
             <h2>Welcome to Loaf Labs</h2>
-            <p>Explore our latest project, PAIN. A 2D game that takes you through an epic journey as a baguette!</p>
-            <br>
-            <div class="game-images">
-                <img src="assets/bg1.png" alt="1st Background">
-                <img src="assets/bg2.png" alt="2nd Background">
-                <img src="assets/bow.png" alt="bow weapon">
-                <img src="assets/burger.png" alt="burger caracter">
-                <img src="assets/hammer.png" alt="hammer weapon">
-                <img src="assets/panini.png" alt="panini character">
-                <img src="assets/sniper.png" alt="sniper weapon">
+            <p>Explore our latest project, <strong>PAIN</strong>. A 2D game that takes you through an epic journey as a baguette!</p>
+        </section>
+
+        <section class="character-gallery">
+            <h2>Meet the Fighters and Weapons</h2>
+            <div class="characters">
+                <div class="character-card">
+                    <img src="assets/baguette.png" alt="Baguette">
+                    <div class="character-info">
+                        <h3>Baguette</h3>
+                        <p>Classic and simple</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="assets/burger.png" alt="Burger">
+                    <div class="character-info">
+                        <h3>Burger</h3>
+                        <p>Durable tank</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="assets/Toast.png" alt="Toast">
+                    <div class="character-info">
+                        <h3>Toast</h3>
+                        <p>Fast but fragile</p>
+                    </div>
+                </div>
+                <div class="character-card">
+                    <img src="assets/hammer.png" alt="Slam">
+                    <div class="character-info">
+                        <h3>Slam</h3>
+                        <p>Powerful ground attack</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="buffs-section">
+            <h2 class="section-title">🧠 Discover all kind of buffs</h2>
+            <div class="buffs-grid">
+                <div class="buff-card">
+                    <img src="assets/artichoke.png" alt="Artichoke">
+                    <div class="buff-overlay">
+                        <h3>⚡ Artichoke</h3>
+                        <p>Move faster to dodge enemy attacks for 10 secondes.</p>
+                    </div>
+                </div>
+                <div class="buff-card">
+                    <img src="assets/asparagus_green.png" alt="Asparagus">
+                    <div class="buff-overlay">
+                        <h3>🛡️ Asparagus</h3>
+                        <p>Allows you to jump higher for 10 secondes.</p>
+                    </div>
+                </div>
+                <div class="buff-card">
+                    <img src="assets/cucumber.png" alt="Cucumber">
+                    <div class="buff-overlay">
+                        <h3>⚡ Cucumber</h3>
+                        <p>15 secondes of pure movespeed .</p>
+                    </div>
+                </div>
+                <div class="buff-card">
+                    <div class="buff-overlay static">
+                        <h3>And more...</h3>
+                        <p>Discover dozens of unique enhancements.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Loaf Labs. All rights reserved.</p>
-        <p>Join us on <a href="https://discord.gg/eQwTde8ZEm" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Discord_logo_2023.svg/1200px-Discord_logo_2023.svg.png" alt="Discord Logo" width="30" height="30"> Discord</a></p>
+        <p>Join us on <a href="https://discord.gg/eQwTde8ZEm" target="_blank"><img src="assets/Discord_Logo.png" alt="Discord Logo" width="30" height="30"></a> for more information.</p>
     </footer>
 
     <script src="js/script.js"></script>

@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Loaf Labs</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true
+  });
+</script>
+
 <body>
     <header>
         <div class="header-content">
-            <div class="logo">
-                <img src="assets/logo.png" alt="Loaf Labs Logo">
+            <div class="logo_jeu">
+                <img src="assets/logo_jeu.png" alt="Loaf Labs Logo">
             </div>
             <div class="project-name">
                 <h1>PAIN</h1>
@@ -26,23 +36,31 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="info.html">Info</a></li>
-                <li><a href="project.html">Project</a></li>
+                <li><a href="project.html">Download</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </div>
 
+    <div class="quote-carousel" data-aos="fade-left">
+        <div class="quote-track">
+            <div class="quote-slide">“This game is bread-taking!”</div>
+            <div class="quote-slide">“Rogue-like and rogue-bread.”</div>
+            <div class="quote-slide">“Did you know... that beer is bread?”</div>
+        </div>
+    </div>
+
     <main>
         <section id="contact">
             <h2>Contact</h2>
-            <p>Coming soon...</p>
-            <p>You can reach us at: <a href="mailto:loaflabs.pro@gmail.com">loaflabs.pro@gmail.com</a></p>
+            <p>If you have encountered any problem, you can reach us at: <a href="mailto:loaflabs.pro@gmail.com">loaflabs.pro@gmail.com</a></p>
+            <p>For downloading issues, here is an <a href="assets/ManuelUtilisation.pdf">instruction manual</a> on how to install PAIN</p>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Loaf Labs. All rights reserved.</p>
-        <p>Join us on <a href="https://discord.gg/eQwTde8ZEm" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Discord_logo_2023.svg/1200px-Discord_logo_2023.svg.png" alt="Discord Logo" width="20" height="20"> Discord</a></p>
+        <p>Join us on <a href="https://discord.gg/eQwTde8ZEm" target="_blank"><img src="assets/Discord_Logo.png" alt="Discord Logo" width="30" height="30"></a> for more information.</p>
     </footer>
 
     <script src="js/script.js"></script>

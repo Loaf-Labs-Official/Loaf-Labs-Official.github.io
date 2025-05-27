@@ -6,11 +6,21 @@
     <title>Info - Loaf Labs</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true
+  });
+</script>
+
 <body>
     <header>
         <div class="header-content">
-            <div class="logo">
-                <img src="assets/logo.png" alt="Loaf Labs Logo">
+            <div class="logo_jeu">
+                <img src="assets/logo_jeu.png" alt="Loaf Labs Logo">
             </div>
             <div class="project-name">
                 <h1>PAIN</h1>
@@ -26,10 +36,18 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="info.html">Info</a></li>
-                <li><a href="project.html">Project</a></li>
+                <li><a href="project.html">Download</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+    </div>
+
+    <div class="quote-carousel" data-aos="fade-left">
+        <div class="quote-track">
+            <div class="quote-slide">“This game is bread-taking!”</div>
+            <div class="quote-slide">“Rogue-like and rogue-bread.”</div>
+            <div class="quote-slide">“Did you know... that beer is bread?”</div>
+        </div>
     </div>
 
     <main>
@@ -41,24 +59,44 @@
             <h3>Meet the Team</h3>
             <div class="team-members">
                 <div class="member">
-                    <h4>Adam G.</h4>
-                    <p>Founder and Backend Developer</p>
+                    <div class="member-photo" style="background-image: url('assets/Shiro.png');">
+                        <div class="member-overlay">
+                            <h4>Adam G.</h4>
+                            <p>Founder and Backend Developer</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="member">
-                    <h4>Mathieu B.</h4>
-                    <p>Backend Developer</p>
+                    <div class="member-photo" style="background-image: url('assets/Mathieu.png');">
+                        <div class="member-overlay">
+                            <h4>Mathieu B.</h4>
+                            <p>Backend Developer</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="member">
-                    <h4>Luc E.</h4>
-                    <p>Frontend Developer</p>
+                    <div class="member-photo" style="background-image: url('assets/Luc.png');">
+                        <div class="member-overlay">
+                            <h4>Luc E.</h4>
+                            <p>Frontend Developer</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="member">
-                    <h4>Eliott L.</h4>
-                    <p>Frontend Developer</p>
+                        <div class="member-photo" style="background-image: url('assets/Elliot.png');">
+                            <div class="member-overlay">
+                                <h4>Eliott L.</h4>
+                                <p>Frontend Developer</p>
+                            </div>
+                        </div>
                 </div>
                 <div class="member">
-                    <h4>Herve L.</h4>
-                    <p>Frontend Developer</p>
+                    <div class="member-photo" style="background-image: url('assets/Hervé.png');">
+                        <div class="member-overlay">
+                            <h4>Herve L.</h4>
+                            <p>Frontend Developer</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -66,7 +104,7 @@
 
     <footer>
         <p>&copy; 2025 Loaf Labs. All rights reserved.</p>
-        <p>Join us on <a href="https://discord.gg/eQwTde8ZEm" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Discord_logo_2023.svg/1200px-Discord_logo_2023.svg.png" alt="Discord Logo" width="30" height="30"> Discord</a></p>
+        <p>Join us on <a href="https://discord.gg/eQwTde8ZEm" target="_blank"><img src="assets/Discord_Logo.png" alt="Discord Logo" width="30" height="30"></a> for more information.</p>
     </footer>
 
     <script src="js/script.js"></script>
